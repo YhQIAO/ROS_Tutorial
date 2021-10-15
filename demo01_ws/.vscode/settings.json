@@ -1,0 +1,9 @@
+{
+    "C_Cpp.default.configurationProvider": "go2sh.cmake-integration",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
