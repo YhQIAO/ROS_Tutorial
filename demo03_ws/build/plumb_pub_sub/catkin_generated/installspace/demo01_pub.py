@@ -8,7 +8,9 @@ if __name__ == "__main__":
 
     msg = String()
     count = 0
+    rate = rospy.Rate(10) # 指定发布频率
     while not rospy.is_shutdown():
-        msg.data = "hello"+count
+        msg.data = "hello"+str(count)
         pub.publish(msg)
         count += 1
+        rate.sleep()
