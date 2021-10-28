@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+turtle_demo/CMakeFiles/test03_service_client.dir/rule:
+	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtle_demo/CMakeFiles/test03_service_client.dir/rule
+.PHONY : turtle_demo/CMakeFiles/test03_service_client.dir/rule
+
+# Convenience name for target.
+test03_service_client: turtle_demo/CMakeFiles/test03_service_client.dir/rule
+
+.PHONY : test03_service_client
+
+# fast build rule for target.
+test03_service_client/fast:
+	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f turtle_demo/CMakeFiles/test03_service_client.dir/build.make turtle_demo/CMakeFiles/test03_service_client.dir/build
+.PHONY : test03_service_client/fast
+
+# Convenience name for target.
 turtle_demo/CMakeFiles/test02_sub_pose.dir/rule:
 	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtle_demo/CMakeFiles/test02_sub_pose.dir/rule
 .PHONY : turtle_demo/CMakeFiles/test02_sub_pose.dir/rule
@@ -256,6 +271,21 @@ turtlesim_generate_messages_py: turtle_demo/CMakeFiles/turtlesim_generate_messag
 turtlesim_generate_messages_py/fast:
 	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f turtle_demo/CMakeFiles/turtlesim_generate_messages_py.dir/build.make turtle_demo/CMakeFiles/turtlesim_generate_messages_py.dir/build
 .PHONY : turtlesim_generate_messages_py/fast
+
+# Convenience name for target.
+turtle_demo/CMakeFiles/test04_param.dir/rule:
+	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtle_demo/CMakeFiles/test04_param.dir/rule
+.PHONY : turtle_demo/CMakeFiles/test04_param.dir/rule
+
+# Convenience name for target.
+test04_param: turtle_demo/CMakeFiles/test04_param.dir/rule
+
+.PHONY : test04_param
+
+# fast build rule for target.
+test04_param/fast:
+	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f turtle_demo/CMakeFiles/test04_param.dir/build.make turtle_demo/CMakeFiles/test04_param.dir/build
+.PHONY : test04_param/fast
 
 # Convenience name for target.
 turtle_demo/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
@@ -476,6 +506,60 @@ src/test02_sub_pose.cpp.s:
 	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f turtle_demo/CMakeFiles/test02_sub_pose.dir/build.make turtle_demo/CMakeFiles/test02_sub_pose.dir/src/test02_sub_pose.cpp.s
 .PHONY : src/test02_sub_pose.cpp.s
 
+src/test03_service_client.o: src/test03_service_client.cpp.o
+
+.PHONY : src/test03_service_client.o
+
+# target to build an object file
+src/test03_service_client.cpp.o:
+	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f turtle_demo/CMakeFiles/test03_service_client.dir/build.make turtle_demo/CMakeFiles/test03_service_client.dir/src/test03_service_client.cpp.o
+.PHONY : src/test03_service_client.cpp.o
+
+src/test03_service_client.i: src/test03_service_client.cpp.i
+
+.PHONY : src/test03_service_client.i
+
+# target to preprocess a source file
+src/test03_service_client.cpp.i:
+	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f turtle_demo/CMakeFiles/test03_service_client.dir/build.make turtle_demo/CMakeFiles/test03_service_client.dir/src/test03_service_client.cpp.i
+.PHONY : src/test03_service_client.cpp.i
+
+src/test03_service_client.s: src/test03_service_client.cpp.s
+
+.PHONY : src/test03_service_client.s
+
+# target to generate assembly for a file
+src/test03_service_client.cpp.s:
+	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f turtle_demo/CMakeFiles/test03_service_client.dir/build.make turtle_demo/CMakeFiles/test03_service_client.dir/src/test03_service_client.cpp.s
+.PHONY : src/test03_service_client.cpp.s
+
+src/test04_param.o: src/test04_param.cpp.o
+
+.PHONY : src/test04_param.o
+
+# target to build an object file
+src/test04_param.cpp.o:
+	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f turtle_demo/CMakeFiles/test04_param.dir/build.make turtle_demo/CMakeFiles/test04_param.dir/src/test04_param.cpp.o
+.PHONY : src/test04_param.cpp.o
+
+src/test04_param.i: src/test04_param.cpp.i
+
+.PHONY : src/test04_param.i
+
+# target to preprocess a source file
+src/test04_param.cpp.i:
+	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f turtle_demo/CMakeFiles/test04_param.dir/build.make turtle_demo/CMakeFiles/test04_param.dir/src/test04_param.cpp.i
+.PHONY : src/test04_param.cpp.i
+
+src/test04_param.s: src/test04_param.cpp.s
+
+.PHONY : src/test04_param.s
+
+# target to generate assembly for a file
+src/test04_param.cpp.s:
+	cd /home/qyh/Desktop/ROS_Tutorial/demo03_ws/build && $(MAKE) -f turtle_demo/CMakeFiles/test04_param.dir/build.make turtle_demo/CMakeFiles/test04_param.dir/src/test04_param.cpp.s
+.PHONY : src/test04_param.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -486,6 +570,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... test03_service_client"
 	@echo "... test02_sub_pose"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... install/local"
@@ -494,6 +579,7 @@ help:
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... turtlesim_generate_messages_py"
 	@echo "... install"
+	@echo "... test04_param"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -512,6 +598,12 @@ help:
 	@echo "... src/test02_sub_pose.o"
 	@echo "... src/test02_sub_pose.i"
 	@echo "... src/test02_sub_pose.s"
+	@echo "... src/test03_service_client.o"
+	@echo "... src/test03_service_client.i"
+	@echo "... src/test03_service_client.s"
+	@echo "... src/test04_param.o"
+	@echo "... src/test04_param.i"
+	@echo "... src/test04_param.s"
 .PHONY : help
 
 

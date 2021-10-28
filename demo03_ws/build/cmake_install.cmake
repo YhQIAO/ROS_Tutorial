@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/qyh/Desktop/ROS_Tutorial/demo03_ws/build/gtest/cmake_install.cmake")
+  include("/home/qyh/Desktop/ROS_Tutorial/demo03_ws/build/plumbing_my/cmake_install.cmake")
   include("/home/qyh/Desktop/ROS_Tutorial/demo03_ws/build/plumb_pub_sub/cmake_install.cmake")
   include("/home/qyh/Desktop/ROS_Tutorial/demo03_ws/build/plumbing_param_server/cmake_install.cmake")
   include("/home/qyh/Desktop/ROS_Tutorial/demo03_ws/build/plumbing_server_client/cmake_install.cmake")
