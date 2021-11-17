@@ -1,0 +1,2 @@
+tf01_static:tf02_dynamic
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/qyh/Desktop/ROS_Tutorial/project_demo04/devel -DCMAKE_INSTALL_PREFIX=/home/qyh/Desktop/ROS_Tutorial/project_demo04/install -G Unix Makefiles
