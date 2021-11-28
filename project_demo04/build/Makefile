@@ -766,6 +766,19 @@ actionlib_msgs_generate_messages_lisp/fast:
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named demo02_dynamic_sub
+
+# Build rule for target.
+demo02_dynamic_sub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo02_dynamic_sub
+.PHONY : demo02_dynamic_sub
+
+# fast build rule for target.
+demo02_dynamic_sub/fast:
+	$(MAKE) -f tf02_dynamic/CMakeFiles/demo02_dynamic_sub.dir/build.make tf02_dynamic/CMakeFiles/demo02_dynamic_sub.dir/build
+.PHONY : demo02_dynamic_sub/fast
+
+#=============================================================================
 # Target rules for targets named demo01_dynamic_pub
 
 # Build rule for target.
@@ -837,6 +850,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... demo02_dynamic_sub"
 	@echo "... demo01_dynamic_pub"
 .PHONY : help
 
